@@ -24,7 +24,7 @@
     "redux-thunk": "~2.2.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
-    "shopify-node-api": "^1.8.0"
+    "shopify-api-node": "^2.15.2"
   },
   "author": "Dmytro V. Dogadailo (https://dogada.org)",
   "license": "ISC"
