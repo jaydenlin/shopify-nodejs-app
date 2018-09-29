@@ -3,7 +3,13 @@
 ## Before Developmet
 
 ### Step 0. Clone this code base
+```
+git clone git@github.com:jaydenlin/shopify-nodejs-app.git
+```
 ### Step 1. Create a Shopify development store & an app
+Follow this guide to create a public app.
+https://help.shopify.com/en/api/getting-started/authentication/public-authentication
+
 ### Step 2. Download ngrok and run
 ```
 ./ngrok http 3000
