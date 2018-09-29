@@ -25,11 +25,15 @@ Press `Apps` to edit the app information
 ```
 https://partners.shopify.com/
 ```
-* App Url
+* App Url  
+```
 https://{XXXXXXX}.ngrok.io/shopify
-* Whitelist Url
+```
+* Whitelist Url  
+```
 https://{XXXXXXX}.ngrok.io/shopify 
 https://{XXXXXXX}.ngrok.io/shopify/callback
+```
 
 ### Step 4. Add API_KEY & API_SECRET at `.env` file
 Go to shopify Patrer Dashboard & login.  
