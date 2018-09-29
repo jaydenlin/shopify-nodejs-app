@@ -1,8 +1,10 @@
 # Shopify nodejs app example
 
-## Create a development store & an app
+## Before Developmet
 
-## Download ngrok and run
+### Step 0. Clone this code base
+### Step 1. Create a Shopify development store & an app
+### Step 2. Download ngrok and run
 ```
 ./ngrok http 3000
 ```
@@ -11,7 +13,7 @@ And you will see a forwarding url, like
 https://{XXXXXXX}.ngrok.io
 ```
 
-## Update app information
+### Step 3. Update app information
 Go to shopify Patrer Dashboard & login.  
 Press `Apps` to edit the app information
 ```
@@ -23,14 +25,17 @@ https://{XXXXXXX}.ngrok.io/shopify
 https://{XXXXXXX}.ngrok.io/shopify 
 https://{XXXXXXX}.ngrok.io/shopify/callback
 
-## Add API_KEY & API_SECRET at `.env` file
-Go to shopify Patrer Dashboard & login.
-Press `Apps` to see API key & API secret
+### Step 4. Add API_KEY & API_SECRET at `.env` file
+Go to shopify Patrer Dashboard & login.  
+Press `Apps` to see API key & API secret.  
+Please add `.env` file at the root of this project folder.  
 ```
 SHOPIFY_API_KEY="{YOUR_API_KEY}"
 SHOPIFY_API_SECRET="{YOUR_API_SECRET_KEY}"
 FORWARDING_ADDRESS={ngrok forwarding url}
 ```
+
+## Development
 
 ## How to use
 
