@@ -7,6 +7,8 @@
 git clone git@github.com:jaydenlin/shopify-nodejs-app.git
 ```
 ### Step 1. Create a Shopify development store & an app
+Go to Patrer Dashboard & login. (https://partners.shopify.com/).  
+Create a development store for the app to test.  
 Follow this guide to create a public app.
 https://help.shopify.com/en/api/getting-started/authentication/public-authentication
 
@@ -20,11 +22,8 @@ https://{XXXXXXX}.ngrok.io
 ```
 
 ### Step 3. Update app information
-Go to shopify Patrer Dashboard & login.  
+Go to shopify Patrer Dashboard & login. (https://partners.shopify.com/)  
 Press `Apps` to edit the app information
-```
-https://partners.shopify.com/
-```
 * App Url  
 ```
 https://{XXXXXXX}.ngrok.io/shopify
@@ -36,7 +35,7 @@ https://{XXXXXXX}.ngrok.io/shopify/callback
 ```
 
 ### Step 4. Add API_KEY & API_SECRET at `.env` file
-Go to shopify Patrer Dashboard & login.  
+Go to shopify Patrer Dashboard & login. (https://partners.shopify.com/)  
 Press `Apps` to see API key & API secret.  
 Please add `.env` file at the root of this project folder.  
 ```
