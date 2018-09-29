@@ -1,22 +1,18 @@
-const express = require('express')
-const next = require('next')
+const express = require('express');
+const next = require('next');
 
-const port = parseInt(process.env.PORT, 10) || 3000
-const dev = process.env.NODE_ENV !== 'production'
-const app = next({ dev })
-const handle = app.getRequestHandler()
+const port = parseInt(process.env.PORT, 10) || 3000;
+const dev = process.env.NODE_ENV !== 'production';
+const app = next({ dev });
+const handle = app.getRequestHandler();
+const shopifyControllers = require('./controllers/shopify');
 
 app.prepare()
   .then(() => {
     const server = express()
 
-    server.get('/shopify', (req, res) => {
-        return res.end(`{ "shopify": "index"}`);
-    })
-  
-    server.get('/shopify/callback', (req, res) => {
-        return res.end(`{ "shopify": "callback"}`);
-    })
+    server.get('/shopify', shopifyControllers.getIndex)
+    server.get('/shopify/callback', shopifyControllers.getCallback)
 
     server.get('*', (req, res) => {
       return handle(req, res)
